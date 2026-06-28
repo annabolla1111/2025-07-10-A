@@ -61,6 +61,7 @@ class DAO():
 
         cursor.execute(query, (c.category_id,))
 
+
         for row in cursor:
             results.append(Product(**row))
 
